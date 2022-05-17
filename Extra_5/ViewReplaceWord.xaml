@@ -1,0 +1,31 @@
+﻿<Window x:Class="Extra_5.Views.ViewReplaceWord"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Extra_5.Views"
+        mc:Ignorable="d"
+        Title="Substituir Palavra" Height="250" Width="600"
+        ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" WindowStyle="None" BorderBrush="Black" BorderThickness="2"
+        Background="LightBlue">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Palavra a Substituir:" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" FontWeight="Bold"/>
+        <TextBlock Text="Nova Palavra:" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" FontWeight="Bold"/>
+        <TextBox x:Name="tbOldWord" Grid.Row="1" Grid.Column="1" Margin="15"/>
+        <TextBox x:Name="tbNewWord" Grid.Row="2" Grid.Column="1" Margin="15"/>
+        <Button x:Name="confirmButton" Content="Substituir" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" Margin="25" Width="100" FontWeight="SemiBold" Background="Orange" Foreground="White" Click="confirmButton_Click"/>
+        <Button x:Name="cancelButton" Content="Cancelar" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Right" Margin="25" Width="100" FontWeight="SemiBold" Background="Orange" Foreground="White" Click="cancelButton_Click"/>
+    </Grid>
+</Window>
