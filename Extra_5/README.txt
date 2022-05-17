@@ -4,7 +4,3 @@ It allows you to:
 - Replace all occurrences of a given word to another given word;
 - Delete all text between parentheses;
 - It counts the number of characters, words, specific words and paragraphs.
-
-There is however a small bug.
-If you go to the 2nd window (The one that replaces words), close it through the App red cross instead of the cancel button and then try to open it again, it would crash if not for the catch statement.
-This does not happen if you close it through the cancel button.
