@@ -1,0 +1,1 @@
+A small picking game, rigged to always pick the right answer.
